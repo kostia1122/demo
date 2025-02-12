@@ -5,15 +5,15 @@ create table products (
 	unit_price int not null
 );
 
-insert into products (id, name, category_name, unit_price) values (1, 'Ананас', 'Продукты', 500);
-insert into products (id, name, category_name, unit_price) values (2, 'Собака', 'Животные', 80);
-insert into products (id, name, category_name, unit_price) values (3, 'Дизель', 'Транспорт', 80);
-insert into products (id, name, category_name, unit_price) values (4, 'Парк атракционов', 'Развлечения', 500);
-insert into products (id, name, category_name, unit_price) values (5, 'Штаны', 'Одежда', 8500);
-insert into products (id, name, category_name, unit_price) values (6, 'Курсы Hexlet', 'Образование', 100000);
-insert into products (id, name, category_name, unit_price) values (7, 'Курс йоги', 'Здоровье', 25000);
+insert into products (id, name, category_name, unit_price) values (1, 'Хлеб', 'Продукты', 50);
+insert into products (id, name, category_name, unit_price) values (2, 'Молоко', 'Продукты', 80);
+insert into products (id, name, category_name, unit_price) values (3, 'Бензин', 'Транспорт', 80);
+insert into products (id, name, category_name, unit_price) values (4, 'Билет в кино', 'Развлечения', 300);
+insert into products (id, name, category_name, unit_price) values (5, 'Зимнее пальто', 'Одежда', 8500);
+insert into products (id, name, category_name, unit_price) values (6, 'Учебники', 'Образование', 400);
+insert into products (id, name, category_name, unit_price) values (7, 'Лекарства', 'Здоровье', 25000);
 insert into products (id, name, category_name, unit_price) values (8, 'Погашение кредита', 'Кредиты', 89000);
-insert into products (id, name, category_name, unit_price) values (9, 'Айфон', 'Подарки', 120000);
+insert into products (id, name, category_name, unit_price) values (9, 'Смартфон в подарок', 'Подарки', 99900);
 
 
 CREATE TABLE family_members (
@@ -23,11 +23,11 @@ CREATE TABLE family_members (
 );
 
 INSERT INTO family_members (id, name, date_of_birth) VALUES
-(1, 'Павлов Андрей Викторович', '1984-05-12'),
-(2, 'Павлова Екатерина Алексеевна', '1989-08-25'),
-(3, 'Павлов Михаил Андреевич', '2012-04-15'),
-(4, 'Сидорова Ольга Петровна', '1960-11-05'),
-(5, 'Николаев Дмитрий Иванович', '1981-07-20');
+(1, 'Иванов Иван Петрович', '1985-06-15'),
+(2, 'Иванова Мария Сергеевна', '1987-09-20'),
+(3, 'Иванов Алексей Иванович', '2010-02-05'),
+(4, 'Иванова Елена Викторовна', '1959-03-10'),
+(5, 'Петров Сергей Александрович', '1982-12-05');
 
 
 CREATE TABLE family_members_job (
@@ -41,10 +41,10 @@ CREATE TABLE family_members_job (
 );
 
 INSERT INTO family_members_job (id, name, position, organisation, salary, start_date) VALUES
-(1, 'Павлов Андрей Викторович', 'Программист', 'ООО "СофтТех"', 95000, '2016-06-01'),
-(2, 'Павлова Екатерина Алексеевна', 'Экономист', 'АО "БанкФинанс"', 82000, '2014-03-10'),
-(3, 'Сидорова Ольга Петровна', 'Учитель', 'Средняя школа №12', 28000, '1998-09-01'),
-(4, 'Николаев Дмитрий Иванович', 'Водитель', 'Частный перевозчик', 35000, '2021-02-15');
+(1, 'Иванов Иван Петрович', 'Инженер', 'ООО "ТехноСервис"', 85000, '2015-03-01'),
+(2, 'Иванова Мария Сергеевна', 'Бухгалтер', 'АО "ФинансГрупп"', 75000, '2012-04-15'),
+(3, 'Иванова Елена Викторовна', 'Репетитор', 'Частная практика', 15000, '2020-01-10'),
+(4, 'Петров Сергей Александрович', 'Таксист', 'Индивидуальная работа', 30000, '2020-09-01');
 
 
 CREATE TABLE expense_products (
@@ -58,12 +58,12 @@ CREATE TABLE expense_products (
 );
 
 INSERT INTO expense_products (id, purchase_date, name, product_id, quantity) VALUES
-(1, '2025-02-01', 'Павлов Андрей Викторович', 1, 3),
-(2, '2025-02-01', 'Павлов Андрей Викторович', 2, 2),
-(3, '2025-02-01', 'Павлов Андрей Викторович', 2, 1),
-(4, '2025-02-06', 'Павлова Екатерина Алексеевна', 5, 1),
-(5, '2025-02-09', 'Николаев Дмитрий Иванович', 3, 20),
-(6, '2025-02-12', 'Сидорова Ольга Петровна', 7, 3),
-(7, '2025-02-18', 'Павлов Андрей Викторович', 8, 1),
-(8, '2025-02-22', 'Павлова Екатерина Алексеевна', 9, 1),
-(9, '2025-02-22', 'Павлов Михаил Андреевич', 4, 1);
+(1, '2025-02-01', 'Иванов Иван Петрович', 1, 2),
+(2, '2025-02-01', 'Иванов Иван Петрович', 2, 3),
+(3, '2025-02-01', 'Иванов Иван Петрович', 2, 1),
+(4, '2025-02-06', 'Иванова Мария Сергеевна', 5, 1),
+(5, '2025-02-09', 'Петров Сергей Александрович', 3, 30),
+(6, '2025-02-12', 'Иванова Елена Викторовна', 7, 5),
+(7, '2025-02-18', 'Иванов Иван Петрович', 8, 1),
+(8, '2025-02-22', 'Иванова Мария Сергеевна', 9, 1),
+(9, '2025-02-22', 'Иванов Алексей Иванович', 4, 1);
